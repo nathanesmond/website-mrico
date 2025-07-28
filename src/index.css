@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Merriweather;
+  src: url('../src/assets/fonts/Merriweather_120pt-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../src/assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url('../src/assets/fonts/Raleway-Regular.ttf');
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-merriweather: Merriweather, serif;
+  --font-roboto: Roboto, sans-serif;
+  --font-raleway: Raleway, sans-serif;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  /* change to your desired color */
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.4);
+  /* unselected dot */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white;
+  /* active dot */
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}

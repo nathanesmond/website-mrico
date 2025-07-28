@@ -1,0 +1,28 @@
+/* Default arrow color and base styling */
+.swiper-button-prev,
+.swiper-button-next {
+  color: gray;
+  /* white by default */
+  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 1.5rem;
+  /* optional: increase icon size */
+}
+
+/* On hover: grow slightly and change color */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: white;
+  /* yellow-400 */
+  transform: scale(1.2);
+  /* slightly enlarge */
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.4);
+  /* unselected dot */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: gray;
+  /* active dot */
+}
